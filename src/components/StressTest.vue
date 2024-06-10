@@ -3,11 +3,19 @@
 	<p>stress: 2(24*24), 1(16*16), 0(8*8)</p>
 	<br />
 	<div class="wrap">
-		<div v-for="(word, index) in wordLevel.stressTwo" :key="index" :class="getClass(word.stress)"></div>
+		<div
+			v-for="(word, index) in wordLevel.stressTwo"
+			:key="index"
+			:class="getClass(word.stress)"
+		></div>
 	</div>
 	<br />
 	<div class="wrap">
-		<div v-for="(word, index) in wordLevel.stressOne" :key="index" :class="getClass2(word.stress)"></div>
+		<div
+			v-for="(word, index) in wordLevel.stressOne"
+			:key="index"
+			:class="getClass2(word.stress)"
+		></div>
 	</div>
 </template>
 
@@ -24,7 +32,9 @@ const wordLevel = ref({
 		{
 			endTimeInSec: 0.3899,
 			index: 0,
-			proficiencyScore: [{ max: 100.0, min: 0.0, name: 'acoustic', score: 84.0 }],
+			proficiencyScore: [
+				{ max: 100.0, min: 0.0, name: 'acoustic', score: 84.0 },
+			],
 			startTimeInSec: 0.14,
 			stress: 2,
 			text: 'miss',
@@ -32,7 +42,9 @@ const wordLevel = ref({
 		{
 			endTimeInSec: 0.95,
 			index: 1,
-			proficiencyScore: [{ max: 100.0, min: 0.0, name: 'acoustic', score: 95.0 }],
+			proficiencyScore: [
+				{ max: 100.0, min: 0.0, name: 'acoustic', score: 95.0 },
+			],
 			startTimeInSec: 0.3999,
 			stress: 1,
 			text: 'henry',
@@ -40,7 +52,9 @@ const wordLevel = ref({
 		{
 			endTimeInSec: 1.37,
 			index: 2,
-			proficiencyScore: [{ max: 100.0, min: 0.0, name: 'acoustic', score: 94.0 }],
+			proficiencyScore: [
+				{ max: 100.0, min: 0.0, name: 'acoustic', score: 94.0 },
+			],
 			startTimeInSec: 0.96,
 			stress: 0,
 			text: 'drank',
@@ -48,7 +62,9 @@ const wordLevel = ref({
 		{
 			endTimeInSec: 1.5899,
 			index: 3,
-			proficiencyScore: [{ max: 100.0, min: 0.0, name: 'acoustic', score: 84.0 }],
+			proficiencyScore: [
+				{ max: 100.0, min: 0.0, name: 'acoustic', score: 84.0 },
+			],
 			startTimeInSec: 1.4299,
 			stress: 2,
 			text: 'a',
@@ -56,7 +72,9 @@ const wordLevel = ref({
 		{
 			endTimeInSec: 1.83,
 			index: 4,
-			proficiencyScore: [{ max: 100.0, min: 0.0, name: 'acoustic', score: 84.0 }],
+			proficiencyScore: [
+				{ max: 100.0, min: 0.0, name: 'acoustic', score: 84.0 },
+			],
 			startTimeInSec: 1.5999,
 			stress: 1,
 			text: 'cup',
@@ -64,7 +82,9 @@ const wordLevel = ref({
 		{
 			endTimeInSec: 2.03,
 			index: 5,
-			proficiencyScore: [{ max: 100.0, min: 0.0, name: 'acoustic', score: 84.0 }],
+			proficiencyScore: [
+				{ max: 100.0, min: 0.0, name: 'acoustic', score: 84.0 },
+			],
 			startTimeInSec: 1.84,
 			stress: 0,
 			text: 'of',
@@ -72,7 +92,9 @@ const wordLevel = ref({
 		{
 			endTimeInSec: 2.6099,
 			index: 6,
-			proficiencyScore: [{ max: 100.0, min: 0.0, name: 'acoustic', score: 98.0 }],
+			proficiencyScore: [
+				{ max: 100.0, min: 0.0, name: 'acoustic', score: 98.0 },
+			],
 			startTimeInSec: 2.04,
 			stress: 2,
 			text: 'coffee',
@@ -80,7 +102,9 @@ const wordLevel = ref({
 		{
 			endTimeInSec: 2.03,
 			index: 7,
-			proficiencyScore: [{ max: 100.0, min: 0.0, name: 'acoustic', score: 84.0 }],
+			proficiencyScore: [
+				{ max: 100.0, min: 0.0, name: 'acoustic', score: 84.0 },
+			],
 			startTimeInSec: 1.84,
 			stress: 0,
 			text: 'of',
@@ -88,7 +112,9 @@ const wordLevel = ref({
 		{
 			endTimeInSec: 2.6099,
 			index: 8,
-			proficiencyScore: [{ max: 100.0, min: 0.0, name: 'acoustic', score: 98.0 }],
+			proficiencyScore: [
+				{ max: 100.0, min: 0.0, name: 'acoustic', score: 98.0 },
+			],
 			startTimeInSec: 2.04,
 			stress: 2,
 			text: 'coffee',
@@ -98,7 +124,9 @@ const wordLevel = ref({
 		{
 			endTimeInSec: 0.3899,
 			index: 0,
-			proficiencyScore: [{ max: 100.0, min: 0.0, name: 'acoustic', score: 84.0 }],
+			proficiencyScore: [
+				{ max: 100.0, min: 0.0, name: 'acoustic', score: 84.0 },
+			],
 			startTimeInSec: 0.14,
 			stress: 2,
 			text: 'miss',
@@ -106,7 +134,9 @@ const wordLevel = ref({
 		{
 			endTimeInSec: 0.95,
 			index: 1,
-			proficiencyScore: [{ max: 100.0, min: 0.0, name: 'acoustic', score: 95.0 }],
+			proficiencyScore: [
+				{ max: 100.0, min: 0.0, name: 'acoustic', score: 95.0 },
+			],
 			startTimeInSec: 0.3999,
 			stress: 1,
 			text: 'henry',
@@ -114,7 +144,9 @@ const wordLevel = ref({
 		{
 			endTimeInSec: 1.37,
 			index: 2,
-			proficiencyScore: [{ max: 100.0, min: 0.0, name: 'acoustic', score: 94.0 }],
+			proficiencyScore: [
+				{ max: 100.0, min: 0.0, name: 'acoustic', score: 94.0 },
+			],
 			startTimeInSec: 0.96,
 			stress: 0,
 			text: 'drank',
@@ -122,7 +154,9 @@ const wordLevel = ref({
 		{
 			endTimeInSec: 1.5899,
 			index: 3,
-			proficiencyScore: [{ max: 100.0, min: 0.0, name: 'acoustic', score: 84.0 }],
+			proficiencyScore: [
+				{ max: 100.0, min: 0.0, name: 'acoustic', score: 84.0 },
+			],
 			startTimeInSec: 1.4299,
 			stress: 2,
 			text: 'a',
@@ -130,7 +164,9 @@ const wordLevel = ref({
 		{
 			endTimeInSec: 1.83,
 			index: 4,
-			proficiencyScore: [{ max: 100.0, min: 0.0, name: 'acoustic', score: 84.0 }],
+			proficiencyScore: [
+				{ max: 100.0, min: 0.0, name: 'acoustic', score: 84.0 },
+			],
 			startTimeInSec: 1.5999,
 			stress: 1,
 			text: 'cup',
@@ -138,7 +174,9 @@ const wordLevel = ref({
 		{
 			endTimeInSec: 2.03,
 			index: 5,
-			proficiencyScore: [{ max: 100.0, min: 0.0, name: 'acoustic', score: 84.0 }],
+			proficiencyScore: [
+				{ max: 100.0, min: 0.0, name: 'acoustic', score: 84.0 },
+			],
 			startTimeInSec: 1.84,
 			stress: 0,
 			text: 'of',
@@ -146,7 +184,9 @@ const wordLevel = ref({
 		{
 			endTimeInSec: 2.6099,
 			index: 6,
-			proficiencyScore: [{ max: 100.0, min: 0.0, name: 'acoustic', score: 98.0 }],
+			proficiencyScore: [
+				{ max: 100.0, min: 0.0, name: 'acoustic', score: 98.0 },
+			],
 			startTimeInSec: 2.04,
 			stress: 2,
 			text: 'coffee',
@@ -154,7 +194,9 @@ const wordLevel = ref({
 		{
 			endTimeInSec: 2.03,
 			index: 7,
-			proficiencyScore: [{ max: 100.0, min: 0.0, name: 'acoustic', score: 84.0 }],
+			proficiencyScore: [
+				{ max: 100.0, min: 0.0, name: 'acoustic', score: 84.0 },
+			],
 			startTimeInSec: 1.84,
 			stress: 0,
 			text: 'of',
@@ -162,7 +204,9 @@ const wordLevel = ref({
 		{
 			endTimeInSec: 2.6099,
 			index: 8,
-			proficiencyScore: [{ max: 100.0, min: 0.0, name: 'acoustic', score: 98.0 }],
+			proficiencyScore: [
+				{ max: 100.0, min: 0.0, name: 'acoustic', score: 98.0 },
+			],
 			startTimeInSec: 2.04,
 			stress: 2,
 			text: 'coffee',

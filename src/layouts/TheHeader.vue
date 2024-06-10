@@ -17,10 +17,33 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <!-- <RouterLink
+                                to="/"
+                                class="nav-link"
+                                :class="{ active: activeLink === '/' }"
+                                aria-current="page"
+                                @click="setLink('home')"
+                                >Home</RouterLink
+                            > -->
+                            <RouterLink
+                                to="/"
+                                class="nav-link"
+                                active-class="active"
+                                aria-current="page"
+                                >Home</RouterLink
+                            >
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                            <!-- <RouterLink
+                                to="/about"
+                                class="nav-link"
+                                :class="{ active: activeLink === '/about' }"
+                                @click="setLink('about')"
+                                >About</RouterLink
+                            > -->
+                            <RouterLink to="/about" class="nav-link" active-class="active"
+                                >About</RouterLink
+                            >
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
@@ -38,6 +61,14 @@
     </header>
 </template>
 
-<script setup></script>
+<script setup>
+import { ref } from 'vue'
+
+const activeLink = ref('/')
+const setLink = (link) => {
+    if (link === 'home') activeLink.value = '/'
+    else activeLink.value = '/about'
+}
+</script>
 
 <style lang="scss" scoped></style>

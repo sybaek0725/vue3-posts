@@ -17,14 +17,6 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                            <!-- <RouterLink
-                                to="/"
-                                class="nav-link"
-                                :class="{ active: activeLink === '/' }"
-                                aria-current="page"
-                                @click="setLink('home')"
-                                >Home</RouterLink
-                            > -->
                             <RouterLink
                                 to="/"
                                 class="nav-link"
@@ -34,27 +26,21 @@
                             >
                         </li>
                         <li class="nav-item">
-                            <!-- <RouterLink
-                                to="/about"
-                                class="nav-link"
-                                :class="{ active: activeLink === '/about' }"
-                                @click="setLink('about')"
-                                >About</RouterLink
-                            > -->
                             <RouterLink to="/about" class="nav-link" active-class="active"
                                 >About</RouterLink
                             >
                         </li>
+                        <li class="nav-item">
+                            <RouterLink to="/posts" class="nav-link" active-class="active"
+                                >게시글</RouterLink
+                            >
+                        </li>
                     </ul>
-                    <form class="d-flex" role="search">
-                        <input
-                            class="form-control me-2"
-                            type="search"
-                            placeholder="Search"
-                            aria-label="Search"
-                        />
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
+                    <div class="d-flex" role="search">
+                        <button class="btn btn-outline-light" type="button" @click="goPage">
+                            글쓰기
+                        </button>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -62,12 +48,11 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { useRouter } from 'vue-router'
 
-const activeLink = ref('/')
-const setLink = (link) => {
-    if (link === 'home') activeLink.value = '/'
-    else activeLink.value = '/about'
+const router = useRouter()
+const goPage = () => {
+    router.push('/posts/create')
 }
 </script>
 

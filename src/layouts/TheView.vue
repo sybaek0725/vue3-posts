@@ -1,10 +1,9 @@
 <template>
-	<main>
-		<div class="container py-4">
-			<h2>Hello Vue3</h2>
-			<RouterView />
-		</div>
-	</main>
+    <main>
+        <div class="container py-4">
+            <RouterView />
+        </div>
+    </main>
 </template>
 
 <script setup></script>
